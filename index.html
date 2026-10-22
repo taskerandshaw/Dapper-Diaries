@@ -1,0 +1,31 @@
+---
+layout: default
+title: The Dapper Diaries
+description: Tailoring, style and the stories behind what we wear from Tasker & Shaw.
+---
+<section class="intro shell">
+  <h1>Thoughts on tailoring, style and dressing well.</h1>
+  <p>Advice, ideas and stories from Tasker &amp; Shaw — from choosing cloth and understanding fit to weddings, personal style and the clothes we live our lives in.</p>
+</section>
+
+<section class="posts shell">
+  {% for post in site.posts %}
+  <article class="card">
+    {% if post.image %}
+    <a class="card-image" href="{{ post.url | relative_url }}">
+      <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}">
+    </a>
+    {% else %}
+    <div class="card-image"></div>
+    {% endif %}
+    <div class="card-body">
+      {% if post.category %}<div class="eyebrow">{{ post.category }}</div>{% endif %}
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p>{{ post.description | default: post.excerpt | strip_html | truncate: 180 }}</p>
+      <a class="read-more" href="{{ post.url | relative_url }}">Read the article</a>
+    </div>
+  </article>
+  {% else %}
+  <div class="empty-state">The first Dapper Diaries articles are on their way.</div>
+  {% endfor %}
+</section>

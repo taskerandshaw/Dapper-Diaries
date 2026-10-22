@@ -11,7 +11,7 @@ layout: default
 
   {% if page.image %}
   <figure class="hero-image">
-    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}">
+    <img src="{{ page.image }}" alt="{{ page.image_alt | default: page.title }}">
   </figure>
   {% endif %}
 

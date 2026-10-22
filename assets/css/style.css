@@ -82,8 +82,8 @@ img{display:block;max-width:100%;height:auto}
   padding-bottom:68px;
 }
 .card{
-  background:var(--paper);
-  border:1px solid var(--line);
+  background:var(--navy);
+  border:1px solid var(--gold);
   overflow:hidden;
   display:flex;
   flex-direction:column;
@@ -110,14 +110,15 @@ img{display:block;max-width:100%;height:auto}
 }
 .card h2{
   margin:8px 0 10px;
-  color:var(--navy);
+  color:#ffffff;
   font-size:24px;
   line-height:1.16;
   font-weight:400;
 }
+.card h2 a{color:#ffffff;}
 .card p{
   margin:0 0 18px;
-  color:var(--muted);
+  color:rgba(255,255,255,0.86);
   font:400 14px/1.65 Arial,sans-serif;
 }
 .read-more{
@@ -297,3 +298,6 @@ img{display:block;max-width:100%;height:auto}
   .card-body{padding:20px;}
   .card h2{font-size:23px;}
 }
+
+
+.read-more:hover{color:#ffffff;}

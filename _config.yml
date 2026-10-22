@@ -1,7 +1,7 @@
 title: "The Dapper Diaries"
 description: "Tailoring, style and the stories behind what we wear."
-url: "https://taskerandshaw.github.io"
-baseurl: "/Dapper-Diaries"
+url: "https://blog.taskerandshaw.com"
+baseurl: ""
 permalink: /:categories/:title/
 markdown: kramdown
 plugins:

@@ -19,6 +19,30 @@ layout: default
     {{ content }}
   </div>
 
+  <nav class="post-nav" aria-label="Blog post navigation">
+    <div class="post-nav-item post-nav-prev">
+      {% if page.previous %}
+        <a href="{{ page.previous.url | relative_url }}">
+          <span class="post-nav-label">← Previous</span>
+          <span class="post-nav-title">{{ page.previous.title }}</span>
+        </a>
+      {% endif %}
+    </div>
+
+    <div class="post-nav-home">
+      <a href="{{ '/' | relative_url }}">Blog Home</a>
+    </div>
+
+    <div class="post-nav-item post-nav-next">
+      {% if page.next %}
+        <a href="{{ page.next.url | relative_url }}">
+          <span class="post-nav-label">Next →</span>
+          <span class="post-nav-title">{{ page.next.title }}</span>
+        </a>
+      {% endif %}
+    </div>
+  </nav>
+
   <aside class="article-cta">
     <h2>Ready to talk tailoring?</h2>
     <p>Book a relaxed, no-pressure consultation in Carlisle, Newcastle or London, or ask about our nationwide travelling tailor service.</p>

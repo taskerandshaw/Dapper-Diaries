@@ -91,7 +91,7 @@ img{display:block;max-width:100%;height:auto}
 }
 .card-image{
   display:block;
-  aspect-ratio:4/3;
+  aspect-ratio:3/4;
   background:linear-gradient(135deg,#e9dfcd,#f8f4eb);
   overflow:hidden;
 }

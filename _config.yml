@@ -1,0 +1,11 @@
+title: "The Dapper Diaries"
+description: "Tailoring, style and the stories behind what we wear."
+url: ""
+baseurl: ""
+permalink: /:categories/:title/
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - README.md

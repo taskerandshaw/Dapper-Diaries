@@ -4,7 +4,7 @@ title: "Why a Wedding Suit Should Work Beyond the Wedding"
 description: "A second temporary sample article so we can test multiple cards and Previous / Home / Next navigation."
 date: 2026-10-20
 category: Weddings
-image: /assets/images/sample-wedding-blue.svg
+image: /assets/images/sample-wedding-blue.jpg
 image_alt: "Bride and groom walking together outdoors, with the groom wearing a navy blue suit"
 sample: true
 ---

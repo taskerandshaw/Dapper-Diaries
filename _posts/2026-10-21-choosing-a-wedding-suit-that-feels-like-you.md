@@ -4,7 +4,7 @@ title: "Choosing a Wedding Suit That Feels Like You"
 description: "A temporary sample article to test the Dapper Diaries card layout, imagery and post navigation."
 date: 2026-10-21
 category: Weddings
-image: /assets/images/sample-wedding-green.svg
+image: /assets/images/sample-wedding-green.jpg
 image_alt: "Newly married couple walking through falling confetti, with the groom wearing a green three-piece suit"
 sample: true
 ---

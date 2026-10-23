@@ -312,52 +312,6 @@ img{display:block;max-width:100%;height:auto}
 }
 
 
-/* Wide editorial cards */
-@media (min-width:981px){
-  .posts{grid-template-columns:repeat(6,minmax(0,1fr));}
-  .card{grid-column:span 2;}
-  .card-wide{
-    grid-column:span 3;
-    flex-direction:row;
-    min-height:300px;
-  }
-  .card-wide .card-image{
-    width:38%;
-    flex:0 0 38%;
-    aspect-ratio:auto;
-  }
-  .card-wide .card-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-  }
-  .card-wide .card-body{
-    padding:28px 30px;
-    justify-content:center;
-  }
-  .card-wide h2{
-    font-size:28px;
-    line-height:1.12;
-  }
-  .card-wide p{
-    font-size:15px;
-    line-height:1.65;
-  }
-}
-
-@media (min-width:641px) and (max-width:980px){
-  .card-wide{
-    grid-column:1 / -1;
-    flex-direction:row;
-  }
-  .card-wide .card-image{
-    width:34%;
-    flex:0 0 34%;
-    aspect-ratio:3/4;
-  }
-}
-
-
 /* Framed Dapper Diaries masthead */
 .intro-title-wrap{
   display:flex;
@@ -376,4 +330,68 @@ img{display:block;max-width:100%;height:auto}
   color:var(--navy);
   text-transform:uppercase;
   letter-spacing:.08em;
+}
+
+
+/* Editorial archive rhythm: 3 cards, then 2 cards */
+@media (min-width:981px){
+  .posts{
+    grid-template-columns:repeat(12,minmax(0,1fr));
+  }
+  .card-three{
+    grid-column:span 4;
+  }
+  .card-two{
+    grid-column:span 6;
+    flex-direction:row;
+    min-height:300px;
+  }
+  .card-two .card-image{
+    width:38%;
+    flex:0 0 38%;
+    aspect-ratio:auto;
+  }
+  .card-two .card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  .card-two .card-body{
+    padding:28px 30px;
+    justify-content:center;
+  }
+  .card-two h2{
+    font-size:28px;
+    line-height:1.12;
+  }
+  .card-two p{
+    font-size:15px;
+    line-height:1.65;
+  }
+
+  /* Centre an incomplete final row */
+  .card-three:nth-child(5n+1):last-child{
+    grid-column:5 / span 4;
+  }
+  .card-three:nth-child(5n+1):nth-last-child(2){
+    grid-column:3 / span 4;
+  }
+  .card-three:nth-child(5n+2):last-child{
+    grid-column:7 / span 4;
+  }
+  .card-two:nth-child(5n+4):last-child{
+    grid-column:4 / span 6;
+  }
+}
+
+@media (min-width:641px) and (max-width:980px){
+  .card-two{
+    grid-column:1 / -1;
+    flex-direction:row;
+  }
+  .card-two .card-image{
+    width:34%;
+    flex:0 0 34%;
+    aspect-ratio:3/4;
+  }
 }

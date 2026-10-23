@@ -6,12 +6,13 @@ description: Tailoring, style and the stories behind what we wear from Tasker & 
 <section class="intro shell">
   <div class="intro-title-wrap"><span class="intro-rule"></span><h1>THE DAPPER DIARIES</h1><span class="intro-rule"></span></div>
   <h2>Thoughts on tailoring, style and dressing well.</h2>
-  <p>Advice, ideas and stories from Tasker &amp; Shaw — from choosing cloth and understanding fit to weddings, personal style and the clothes we live our lives in.</p>
+  <p>Advice, ideas and stories from Tasker &amp; Shaw, from choosing cloth and understanding fit to weddings, personal style and the clothes we live our lives in.</p>
 </section>
 
 <section class="posts shell">
   {% for post in site.posts %}
-  <article class="card{% if post.card_style == 'wide' %} card-wide{% endif %}">
+  {% assign cycle_position = forloop.index0 | modulo: 5 %}
+  <article class="card{% if cycle_position >= 3 %} card-two{% else %} card-three{% endif %}">
     {% if post.image %}
     <a class="card-image" href="{{ post.url | relative_url }}">
       <img src="{{ post.image }}" alt="{{ post.image_alt | default: post.title }}">

@@ -4,7 +4,7 @@ title: "What Makes a Made-to-Measure Suit Different From an Off-the-Peg Suit?"
 description: "The real differences between made-to-measure and off-the-peg suits, from fit and proportion to cloth, choice and personalisation."
 date: 2026-10-22
 category: Tailoring
-image: https://www.taskerandshaw.com/assets/images/red-jacket2-816x1224.png
+image: /assets/images/made-to-measure-vs-off-the-peg.JPG
 image_alt: "Red velvet made-to-measure dinner jacket displayed in a Tasker & Shaw tailoring studio"
 ---
 

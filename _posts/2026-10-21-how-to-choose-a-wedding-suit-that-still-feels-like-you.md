@@ -4,7 +4,7 @@ title: "How to Choose a Wedding Suit That Still Feels Like You"
 description: "How to choose a wedding suit that feels special without becoming costume, from colour and cloth to fit, setting and personal style."
 date: 2026-10-21
 category: Weddings
-image: /assets/images/sample-wedding-green.jpg
+image: /assets/images/wedding-suit-feels-like-you.JPG
 image_alt: "Newly married couple walking through confetti, with the groom wearing a green three-piece suit"
 ---
 

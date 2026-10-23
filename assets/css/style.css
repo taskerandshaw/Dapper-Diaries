@@ -79,7 +79,7 @@ img{display:block;max-width:100%;height:auto}
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
   gap:24px;
-  padding-bottom:68px;
+  padding-bottom:30mm;
 }
 .card{
   background:var(--navy);

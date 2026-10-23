@@ -395,3 +395,12 @@ img{display:block;max-width:100%;height:auto}
     aspect-ratio:3/4;
   }
 }
+
+
+.card-date{
+  margin-top:7px;
+  color:rgba(255,255,255,0.68);
+  font:500 10px/1.4 Arial,sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}

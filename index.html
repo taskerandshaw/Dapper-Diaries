@@ -10,7 +10,8 @@ description: Tailoring, style and the stories behind what we wear from Tasker & 
 </section>
 
 <section class="posts shell">
-  {% for post in site.posts %}
+  {% assign sorted_posts = site.posts | sort: "date" | reverse %}
+  {% for post in sorted_posts %}
   {% assign cycle_position = forloop.index0 | modulo: 5 %}
   <article class="card{% if cycle_position >= 3 %} card-two{% else %} card-three{% endif %}">
     {% if post.image %}
@@ -22,6 +23,7 @@ description: Tailoring, style and the stories behind what we wear from Tasker & 
     {% endif %}
     <div class="card-body">
       {% if post.category %}<div class="eyebrow">{{ post.category }}</div>{% endif %}
+      <div class="card-date">{{ post.date | date: "%-d %B %Y" }}</div>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
       <p>{{ post.description | default: post.excerpt | strip_html | truncate: 180 }}</p>
       <a class="read-more" href="{{ post.url | relative_url }}">Read the article</a>

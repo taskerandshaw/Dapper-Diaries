@@ -4,6 +4,7 @@ title: "When Should You Order Your Wedding Suit?"
 description: "How far ahead should you order a made-to-measure wedding suit? A practical guide to timings, fittings, alterations and wedding-party planning."
 date: 2026-10-23
 category: Weddings
+image: /assets/images/when-to-order-wedding-suit.jpeg
 image_alt: "October 2026 desk calendar with a wedding suit date circled"
 ---
 

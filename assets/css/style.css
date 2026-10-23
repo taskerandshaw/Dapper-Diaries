@@ -310,3 +310,49 @@ img{display:block;max-width:100%;height:auto}
   color:var(--gold);
   font-weight:700;
 }
+
+
+/* Wide editorial cards */
+@media (min-width:981px){
+  .posts{grid-template-columns:repeat(6,minmax(0,1fr));}
+  .card{grid-column:span 2;}
+  .card-wide{
+    grid-column:span 3;
+    flex-direction:row;
+    min-height:300px;
+  }
+  .card-wide .card-image{
+    width:38%;
+    flex:0 0 38%;
+    aspect-ratio:auto;
+  }
+  .card-wide .card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  .card-wide .card-body{
+    padding:28px 30px;
+    justify-content:center;
+  }
+  .card-wide h2{
+    font-size:28px;
+    line-height:1.12;
+  }
+  .card-wide p{
+    font-size:15px;
+    line-height:1.65;
+  }
+}
+
+@media (min-width:641px) and (max-width:980px){
+  .card-wide{
+    grid-column:1 / -1;
+    flex-direction:row;
+  }
+  .card-wide .card-image{
+    width:34%;
+    flex:0 0 34%;
+    aspect-ratio:3/4;
+  }
+}

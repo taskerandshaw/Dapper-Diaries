@@ -9,5 +9,33 @@
 </head>
 <body class="embedded-blog" style="background:#ffffff !important;">
   <main>{{ content }}</main>
+  <script>
+    (function () {
+      function reportHeight() {
+        var height = Math.max(
+          document.body.scrollHeight,
+          document.documentElement.scrollHeight,
+          document.body.offsetHeight,
+          document.documentElement.offsetHeight
+        );
+
+        window.parent.postMessage({
+          source: 'dapper-diaries',
+          type: 'resize',
+          height: height
+        }, '*');
+      }
+
+      window.addEventListener('load', reportHeight);
+      window.addEventListener('resize', reportHeight);
+
+      if ('ResizeObserver' in window) {
+        new ResizeObserver(reportHeight).observe(document.body);
+      }
+
+      setTimeout(reportHeight, 100);
+      setTimeout(reportHeight, 500);
+    }());
+  </script>
 </body>
 </html>
